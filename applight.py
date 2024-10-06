@@ -43,6 +43,7 @@ df['Week_Label'] = df['Day'].apply(month_week_label)
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 app.config.suppress_callback_exceptions = True
+app.title = "TNEB Dashboard"
 
 # prediction model defs
 def rolling_average(data, window_size=3):
