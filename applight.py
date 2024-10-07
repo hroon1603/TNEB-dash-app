@@ -328,7 +328,7 @@ def update_line_chart(selected_week, selected_algorithm):
         paper_bgcolor='rgba(255,255,255,0.9)'  
     )
 
-    percentage_diff = f'Average Power Usage Increased by {summer_difference:.2f}% during the Summer and {weekend_weekday_diff:.2f}% during the weekends.' if summer_difference != float('inf') else 'Data unavailable for percentage calculation.'
+    percentage_diff = f'Average Power Usage Increased by {summer_difference:.2f}% during the Summer and {weekend_weekday_diff:.2f}% during the weekdays.' if summer_difference != float('inf') else 'Data unavailable for percentage calculation.'
 
     return fig, graph_info, percentage_diff, hist_fig_weekend_weekday, hist_fig_weeks
 
